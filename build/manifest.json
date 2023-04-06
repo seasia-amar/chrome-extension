@@ -1,0 +1,28 @@
+{
+
+  "author": "management",
+ 
+  "description": "User Management",
+  "manifest_version": 3,
+  "name": "user",
+  
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "version": "0.1",
+
+   "icons": {
+     "16": "/logo192.png",
+     "32": "/logo192.png",
+     "64": "/logo192.png"
+   },
+  "action":{
+     "default_popup":"index.html"
+  },
+
+  "host_permissions": [
+ "https://*/*"
+]
+  
+}

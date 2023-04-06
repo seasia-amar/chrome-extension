@@ -1,0 +1,30 @@
+{
+    "author": "management",
+
+    "description": "User Management",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAheaEr2iDDTWNJEHuzSLvpzJYL58pm6viMV/VKyRTlMViKwA3A+ReAtmnIRkucE3vCGXWyHjITrq2lEI54Gm6L1ojHTHh4a22wGJ/vbYoUvogt+BaRAQ+NJQqvrBz3SYhbmIz8qkMsGMo87NjvZcIrE7wdbaAoXCa0VKYtHVc/W+ilu1+lIFgzhP53e04y4n9tNiWjNl2bf5KASyPo83tK51II2Fp0IMhCsq7l7Vs+wGx7XfpkRyYGDyMM/sMgf/WFI/PcuuxDhfjurGmc1F6V750Xq3kbuhmYyNh8KOVSCS9zuYma/i15YrEALV3+IF8kDSIdNJCWKrUU3hIEBWWCQIDAQAB",
+    "manifest_version": 3,
+    "name": "user",
+    
+    "permissions": ["tabs", "contextMenus","scripting","storage", "activeTab", "fileBrowserHandler"],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "0.1",   
+  
+     "icons": {
+       
+       "16": "/public/logo192.png"
+     },
+    "action":{
+       "default_popup":"src/component/Welcome.js"
+    },
+ 
+    "host_permissions": [
+   "https://*/*"
+ ],
+    
+ "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",  
+    "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://*.firebaseio.com' 'https://www.googleapis.com' 'https://ajax.googleapis.com'; object-src 'self'  "
+  }
+ }
+ 
